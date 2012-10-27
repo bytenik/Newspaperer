@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Backend.master.cs" Inherits="Windchime.Backend" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Project Windchime</title>
+    <link type="text/css" href="Backend.css" rel="Stylesheet" />
+    <link type="text/css" href="CollectionBrowser/Inspector.css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder ID="Head" runat="server" />
+</head>
+<body>
+    <form id="Form" runat="server">
+    <div id="container">
+        <div id="heading">
+            <h3>
+                CS 551 - Stevens Institute of Technology</h3>
+            <h1>
+                <a href="Main.aspx">Project Windchime</a></h1>
+            <h2>
+                <asp:Label ID="PageName_label" runat="server" /></h2>
+        </div>
+        <div>
+            <div id="LoginPanel" align="right">
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" 
+                    LogoutPageUrl="./Logout.aspx" OnLoggedOut="LoginStatus1_LoggedOut" />
+            </div>
+            <ajax:toolkitscriptmanager ID="ToolkitScriptManager" 
+    runat="server" />
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <p>Banner: "Mini-bells" by <a href="http://www.flickr.com/photos/revdave/347410752/">iowa_spirit_walker</a><br />
+            Icons: "ASP.net Icons" by <a href="http://www.aspneticons.com">aspneticons.com</a></p>
+            <p id="copyright">Copyright &copy; 2008-2009 - Project Windchime Team</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿.inspector div
+{
+	margin: 2px;
+	height: 84px;
+	width: 75px;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	cursor: default;
+}
+
+.inspector div:hover
+{
+	border: 1px solid #7da2ce;
+	margin: 1px; /* must always be 1px lower than normal margin, to correct for 1px border */
+	background-color: #cee3fc;
+	-moz-border-radius: 8%;
+}
+
+.inspector div img
+{
+	display: inline;
+	margin: 3px;
+	border: 1px solid #ffffff;
+}
+
+.inspector p
+{
+	text-align: center;
+	font-weight: normal;
+	/*width: 120px;*/
+	color: black;
+	margin: 2px;
+}
+
+table.inspectortable
+{
+	width: 100%;
+	border: 1px solid black;
+	min-height: 350px;
+}
